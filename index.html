@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="app-bg-container">
+      <div class="calculator">
+        <input type="text" id="result" readonly class="user-input" />
+        <div class="buttons">
+          <button class="operator" onclick="appendToResult('(')">(</button>
+          <button class="operator" onclick="appendToResult(')')">)</button>
+          <button class="operator" onclick="clearResult()">C</button>
+          <button class="operator" onclick="deleteLast()">&#x232B;</button>
+          <button onclick="appendToResult('7')">7</button>
+          <button onclick="appendToResult('8')">8</button>
+          <button onclick="appendToResult('9')">9</button>
+          <button class="operator" onclick="appendOperator('+')">+</button>
+          <button onclick="appendToResult('4')">4</button>
+          <button onclick="appendToResult('5')">5</button>
+          <button onclick="appendToResult('6')">6</button>
+          <button class="operator" onclick="appendOperator('-')">-</button>
+          <button onclick="appendToResult('1')">1</button>
+          <button onclick="appendToResult('2')">2</button>
+          <button onclick="appendToResult('3')">3</button>
+          <button class="operator" onclick="appendOperator('*')">*</button>
+          <button onclick="appendToResult('.')">.</button>
+          <button onclick="appendToResult('0')">0</button>
+          <button class="calculate" onclick="calculateResult()">=</button>
+          <button class="operator" onclick="appendOperator('/')">
+            &divide;
+          </button>
+        </div>
+      </div>
+      <marquee
+        behavior="scroll"
+        direction="left"
+        scrollamount="5"
+        style="margin-top: 30px"
+      >
+        &copy; Phanindra Babu chandra &nbsp; &nbsp; &nbsp; &copy; PhanindraBabu
+        chandra &nbsp; &nbsp;&nbsp; &copy; PhanindraBabu &nbsp; &nbsp; &copy;
+        PhanindraBabu
+      </marquee>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
